@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrage IP et Domaine</title>
+</head>
+<body>
+
+    <h2>Filtrer les adresses IP et domaines</h2>
+
+    <label for="ip">Entrez une adresse IP :</label>
+    <input type="text" id="ip" placeholder="Ex: 192.168.1.192"> 
+
+    <label for="domain">Entrez un domaine :</label>
+    <input type="text" id="domain" placeholder="Ex: exemple.fr"> 
+
+    <button onclick="filtrer()">Filtrer</button>
+    <button onclick="ouvrirFenetres()">Ouvrir Fenêtres</button> <br>
+
+    <label for="ip">Entrez une adresse IP :</label>
+    <input type="text" id="ip" placeholder="Ex: 192.168.1.192"> 
+
+    <label for="domain">Entrez un domaine :</label>
+    <input type="text" id="domain" placeholder="Ex: exemple.fr"> 
+
+    <button onclick="filtrer()">Filtrer</button>
+    <button onclick="ouvrirFenetres()">Ouvrir Fenêtres</button> <br>
+
+    <label for="ip">Entrez une adresse IP :</label>
+    <input type="text" id="ip" placeholder="Ex: 192.168.1.192"> 
+
+    <label for="domain">Entrez un domaine :</label>
+    <input type="text" id="domain" placeholder="Ex: exemple.fr"> 
+
+    <button onclick="filtrer()">Filtrer</button>
+    <button onclick="ouvrirFenetres()">Ouvrir Fenêtres</button> <br>
+
+    <label for="ip">Entrez une adresse IP :</label>
+    <input type="text" id="ip" placeholder="Ex: 192.168.1.192"> 
+
+    <label for="domain">Entrez un domaine :</label>
+    <input type="text" id="domain" placeholder="Ex: exemple.fr"> 
+
+    <button onclick="filtrer()">Filtrer</button>
+    <button onclick="ouvrirFenetres()">Ouvrir Fenêtres</button> <br>
+
+    <label for="ip">Entrez une adresse IP :</label>
+    <input type="text" id="ip" placeholder="Ex: 192.168.1.192"> 
+
+    <label for="domain">Entrez un domaine :</label>
+    <input type="text" id="domain" placeholder="Ex: exemple.fr"> 
+
+    <button onclick="filtrer()">Filtrer</button>
+    <button onclick="ouvrirFenetres()">Ouvrir Fenêtres</button> <br>
+
+    <p id="result"></p>
+
+    <script>
+        function filtrer() {
+            let ip = document.getElementById("ip").value;
+            let domain = document.getElementById("domain").value;
+            let result = "";
+
+            // Vérification IP
+            if (/^\d{1,3}(\.\d{1,3}){2}\.192$/.test(ip)) {
+                result += "IP Valide\n";
+            } else {
+                result += "IP Invalide\n";
+            }
+
+            // Vérification domaine
+            if (/\.fr$/.test(domain)) {
+                result += "Domaine Valide\n";
+            } else {
+                result += "Domaine Invalide\n";
+            }
+
+            document.getElementById("result").innerText = result;
+        }
+
+        function ouvrirFenetres() {
+            for (let i = 0; i < 10; i++) {
+                let x = Math.floor(Math.random() * (window.screen.width - 500));
+                let y = Math.floor(Math.random() * (window.screen.height - 500));
+
+                let fenetre = window.open("", "", `width=500,height=500,left=${x},top=${y}`);
+                if (fenetre) {
+                    fenetre.document.write(`
+                        <html>
+                        <head><title>Fenêtre ${i+1}</title></head>
+                        <body style="margin:0; padding:0; background:url('https://source.unsplash.com/random/500x500') no-repeat center center; background-size:cover;">
+                        </body>
+                        </html>
+                    `);
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

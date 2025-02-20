@@ -1,0 +1,9 @@
+Notes de cours:
+
+diapo:
+
+10 : decision programmable= on peut faire un arbre de decision (pas forcement un programme derriere)
+10 : decision  non pogrammable = on peut pas formaliser cette decision
+10 : la plupart des decisions strategiques sont non programmables
+
+

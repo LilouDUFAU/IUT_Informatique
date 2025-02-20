@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zip</title>
+</head>
+<body>
+
+    <h2>Compression de Vecteur</h2>
+    <label for="inputArray">Entrez des nombres séparés par des virgules :</label>
+    <input type="text" id="inputArray" placeholder="ex: 1,2,2,3,4,4,5">
+    <button onclick="compressVector()">Compresser</button>
+
+    <h3>Résultat :</h3>
+    <p id="result"></p>
+
+    <script>
+        function zipV(arr) {
+            if (arr.length === 0) {
+                return [];
+            }
+
+            let [first, ...rest] = arr;  // Premier élément et reste du tableau
+            let filteredRest = zipV(rest.filter(x => x !== first)); // Supprime les occurrences du premier élément
+
+            return [first, ...filteredRest];
+        }
+
+        function compressVector() {
+            let input = document.getElementById("inputArray").value;
+            let array = input.split(',').map(x => x.trim()).filter(x => x !== "").map(Number); // Convertir en tableau de nombres
+            
+            let compressedArray = zipV(array);
+
+            document.getElementById("result").innerText = "Vecteur compressé : " + compressedArray.join(", ");
+        }
+    </script>
+
+</body>
+</html>

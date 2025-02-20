@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <title>GestionArticles</title>
+</head>
+
+<body>
+  <header id="main-header" class="bg-primary text-white p-4 mb-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <h1 id="header-title">Interface de choix des articles</h1>
+        </div>
+        <div class="col-md-4 align-self-center">
+          <input type="text" class="form-control" id="filter" placeholder="Rechercher un item dans la table" />
+        </div>
+        <div class="col-md-2 align-self-center">
+          <img
+            src="https://previews.123rf.com/images/arjoe/arjoe1509/arjoe150900015/45796696-texte-de-commerce-%C3%A9lectronique-avec-dessin-cr%C3%A9atif.jpg"
+            class="img-fluid img-thumbnail" alt="image responsive">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Article</th>
+          <th scope="col">Qte Stock</th>
+          <th scope="col">Prix HT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Item 1</th>
+          <td>Pains au lait (paquet de 10)</td>
+          <td>10</td>
+          <td>0.95€</td>
+        </tr>
+        <tr>
+          <th scope="row">Item 2</th>
+          <td>Miel d'oranger (pot de 250 g)</td>
+          <td>29</td>
+          <td>4.50€</td>
+        </tr>
+        <tr>
+          <th scope="row">Item 3</th>
+          <td>Farine de froment (paquet de 1 kg)</td>
+          <td>12</td>
+          <td>0.65€</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container">
+    <div id="main" class="card card-body">
+      <h2 class="title">Ajouter un article à ma sélection ...</h2>
+      <form name="monFormulaire" id="addForm" class="form-inline mb-3">
+        <input type="text" class="form-control mr-2" id="item" name="ZoneSaisie" />
+        <input type="submit" class="btn btn-dark" value="Submit" />
+      </form>
+      <h4 class="title">Items déjà sélectionnés :</h4>
+      <ul id="items" class="list-group font-weight-bold">
+        <li class="list-group-item">
+          Item 1
+          <button class="btn btn-danger btn-sm float-right">X</button>
+        </li>
+        <li class="list-group-item">
+          Item 2
+          <button class="btn btn-danger btn-sm float-right">X</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="main.js">
+      let Ph = document.getElementById("filter") ;
+      Ph.placeholder = "Rechercher un item dans la table ..." ; 
+  </script>
+ 
+</body>
+
+</html>

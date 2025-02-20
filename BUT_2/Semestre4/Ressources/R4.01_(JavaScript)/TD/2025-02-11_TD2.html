@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD2</title>
+</head>
+<body>
+    <p>voir la question 3 <button onclick="affiche()">voir</button></p>
+    <p>voir la question 6 <button ondblclick="affiche2()">voir</button></p>
+    <p>voir la question 7 <button onmouseover="tri(tab)">voir</button></p>
+</body>
+<script> 
+    // 1.
+    var a = 3;
+    var b = 2;
+
+    // 2.
+        function multiplie(y ,x = 8){
+            var res = x*y;
+            return res;
+        }
+
+    // 3.
+    function affiche(){
+        alert(multiplie(a,b));
+        alert(multiplie(b));
+    }
+
+    // 4.
+    var tab = [-2,1,4];
+
+    //  5.
+    function multiplie2(x){
+        var res = [];
+        for (var i = 0; i < tab.length-1; i++){
+            var result = res.push(x*tab[i]);
+        }
+        return result;
+    }
+
+    // 6.
+    function affiche2(){
+        var res = [];
+        for (var i = 0; i < tab.length - 1; i++){
+            var result = multiplie(tab[i],tab[i+1]);
+            res.push(result);
+        }
+        alert(res.join(","));
+    }
+
+    //  7.
+    function tri(arr){
+        var tabTri = arr.sort((a,b)=>{
+            return a-b
+        });
+        alert(tabTri.join(","));
+    }
+    
+</script>
+</html>

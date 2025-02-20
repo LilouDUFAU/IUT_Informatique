@@ -1,0 +1,10 @@
+Pourquoi on utilise plsql:
+
+pour exec un script qui contient plusieurs requettes sql et on peut creer des fonctions (retour) et procedure (pas de retour)
+
+creer fonction : 
+
+creer procedure : 
+
+si renvoie plusieurs lignes: cursor
+si renvoie qu'une seule ligne : into

@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1</title>
+    <script ype="text/javascript">
+        // 1
+        function ex1(){
+            // 1
+            var jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+
+            // 2
+            // var divJoursSemaine = document.createElement("div"); //création d'un élément div
+            // var textJoursSemaine = document.createTextNode("Les jours de la semaine : " + jours.join("; ")); //création d'un noeud texte
+            // divJoursSemaine.appendChild(textJoursSemaine); // ajout du noeud texte à l'élément div
+            // document.body.appendChild(divJoursSemaine); // ajout de l'élément div au body
+            // alert("Les jours de la semaine : " + jours.join(";"));
+
+            // 3
+            for (var i = 0; i < jours.length; i++) {
+                var divJour = document.createElement("div");
+                var textJour = document.createTextNode("Jour "+ [i] + " : " + jours[i]);
+                divJour.appendChild(textJour);
+                document.body.appendChild(divJour);
+            }
+            
+        }
+
+        // 2.1
+        function somRec(i){
+            if (i < 0 || !Number.isInteger(Number(i))) {
+                alert("somme indéfinie");
+            } else if (i==0) {
+
+                return 0;
+            } else{
+                var somme = Number(i) + somRec(i-1);
+                // creer un div pour afficher le calcul + le resultat
+                alert (somme);
+                return somme;
+            }
+        }
+
+        // 2.2
+        function somFor(i){
+            if (i < 0 || !Number.isInteger(Number(i))) {
+                alert("somme indéfinie");
+            } else {
+                // sinon on additionne 1+2+3+...+i
+                var somme = 0;
+                for (var j = 0; j <= i; j++) {
+                    somme += j;
+                }
+                alert("La somme des entiers de 0 à " + i + " est : " + somme);
+            }
+        }
+
+        // 2.3
+        function idk(){
+            var n = prompt("Entrez un entier : ");
+            somRec(n);
+            alert("La somme des entiers de 0 à " + n + " est : " + somRec(n));
+        }
+
+        // 3.1
+        function nav(){
+            var nav = navigator.appName;
+            var version = navigator.appVersion;
+            alert("Nom du navigateur : " + nav + "\nVersion : " + version);
+        }
+
+        // 3.2
+        function doc(){
+            var titre = document.title;
+            alert("Titre du document : " + titre);
+        }
+
+        // 3.3
+        function modif(){
+            var modif = document.lastModified;
+            alert("Date de dernière modification : " + modif);
+        }
+
+    </script>
+
+</head>
+<body>
+    <h1>TP2</h1>
+    <h2><u>Exercice 1</u></h2>
+    <p>Voir les jours de la semaine : <button onclick="ex1()">Afficher</button></p>
+
+
+    <h2><u>Exercice 2</u></h2>
+    <p>Calculer la somme des entiers de 0 à n : <input type="text" id="x" name="x"><button onclick="somRec(x.value)">Calculer</button></p>
+
+    <p>Calculer la somme des entiers de 0 à n : <input type="text" id="n" name="n"><button onclick="somFor(n.value)">Calculer</button></p>
+
+    <p>Calcul : <button onclick="idk()">Calculer</button></p>
+
+    <h2><u>Exercice 3</u></h2>
+    <p>Voir le nom du naviguateur et sa version : <button onclick="nav()">Voir</button></p>
+
+    <p>Voir le titre du document : <button onclick="doc()">Voir</button></p>
+
+    <p>Voir la date de dernieres modifications : <button onclick="modif()">Voir</button></p>    
+</body>
+</html>

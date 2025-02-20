@@ -1,0 +1,139 @@
+RAPPEL:
+
+DAO: langage de prog pour manipuler des bases de donnees sur access on pourra créer des donnees, selectionner des donnees, definir des actions pour des boutons 
+etc
+
+ADO: langage de prog pour manipuler des bases de donnees sur access on pourra créer des donnees, selectionner des donnees, definir des actions pour des boutons etc
+
+difference entre les deux: syntaxes et libraires différentes
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+on utilise le DAO pour attribuer une action a nimporte quel composant dun formulaire
+
+composant du formulaire
+	∟bouton
+	∟liste deroulante
+	∟check box
+	∟label 
+	∟ ...
+
+action: 
+	∟click()
+	∟dblClick()
+	∟mouseenter(
+	∟ …
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Creation dune fonction en DAO:
+
+0- nom de la fonction:
+ex. 
+	btn_lecture Click()
+_____________________________
+1- declaration des variables
+_____________________________
+2- initialisation des variables
+ex.
+	∟recordset
+	∟nom_table
+_____________________________
+3- traitement
+ex.
+	∟if
+	∟for
+	∟while
+	∟ ...
+-----------------------------------------------------------------------------------------------------------------------------------
+PARTIE 1 (DAO)
+
+Questions:
+
+1)
+private sub btn_LECTURE_Click()
+	Dim db As Database
+	Dim tb_agence As Recordset
+
+	Set db= CurrentDb()
+	Set tb_agence= db.OpenRecordSet("select * from rchbeir_agence",dbOpenDynaSet)
+
+	While not tb_agence.EOF
+		MsgBox tb_agence("ville")
+		tb_agence.MoveNext
+	Wend
+
+db.close
+End sub
+
+2)
+
+3)
+
+4)
+Private Sub btn_SUPPRESSION_Click()
+Dim db As DataBase
+Dim tb_agence As RecordSet 
+
+Set db= CurrentDb()	
+Set tb_agence= db.OpenRecordSet("select * from rchbeir_agence where ville = 'poitiers' ",dbOpenDynaSet)
+
+If not tb_agence.EOF
+	tb_agence.Delete
+	tb_agence.MoveNext
+End If
+
+db.Close
+End Sub
+
+-----------------------------------------------------------------------------------------------------------------------------------
+PARTIE 2 (ADO)
+
+Questions:
+
+1)
+SELECT nom_avion, capacite
+FROM avions;
+
+2)
+Dim db As New ADODB.Connection		//declarer la base de donnee
+Dim  tb_avion As New ADODB.Recordset	//declarer le recordset
+
+//procedure qui va s'executer au chargement du formulaire
+Private Sub Form_Load()
+	Set db = CurrentProject.Connection
+	tb_avion.Open"select * from avion "
+End Sub
+
+
+Private Sub btn_debut_Click()
+If not tb_avion.EOF Then
+	tb_avion.MoveFirst
+	etiq.Value= "L'avion" & tb_avion.Field("nom_avion").Value & "a une capacité de : " & tb_avion.Field("capacite").Value
+
+End If
+End Sub
+
+
+Private Sub btn_suivant_Click()
+If not tb_avion.EOF Then
+	tb_avion.MoveNex
+	etiq.Value= "L'avion" & tb_avion.Field("nom_avion").Value & "a une capacité de : " & tb_avion.Field("capacite").Value
+
+End If
+End Sub
+
+Private Sub btn_precedent_Click()
+If not tb_avion.EOF Then
+	tb_avion.MovePrevious
+	etiq.Value= "L'avion" & tb_avion.Field("nom_avion").Value & "a une capacité de : " & tb_avion.Field("capacite").Value
+
+End If
+End Sub
+
+Private Sub btn_fin_Click()
+If not tb_avion.EOF Then
+	tb_avion.MoveLast
+	etiq.Value= "L'avion" & tb_avion.Field("nom_avion").Value & "a une capacité de : " & tb_avion.Field("capacite").Value
+
+End If
+End Sub
+

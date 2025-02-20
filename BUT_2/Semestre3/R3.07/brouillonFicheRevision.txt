@@ -1,0 +1,16 @@
+faire tableau avec les actions ado et dao:
+suivant, precedent, prochain, premier, dernier 
+DAO/ADO:
+rs.MoveNext
+rs.MovePrevious
+rs.MoveNext
+rs.MoveFirst
+rs.MoveLast
+
+
+ajout ligne, suppression ligne, modification valeur, declaration bd, initialisation bd, declaration recordset
+DAO:
+
+
+ADO:
+

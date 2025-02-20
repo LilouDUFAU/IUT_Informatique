@@ -1,0 +1,13 @@
+R3.10 
+
+GUREKULTURA : Groupe 7
+
+Memento agile:	
+
+Scrum master : Maxime  
+
+PO (Supervise le produit : valide les user story → donne les priorités) : Marquesuzaa
+
+Proxi PO (Rédige les users stories mais tout le monde peut aider, discute prioritairement avec client, gere backlog en fonction de ce qu'il a vu avec PO) : Théo
+
+Équipe de dev :  Théo, Maxime, Edgar, Lilou, Julian, Kilian (+Émile et Etienne) 

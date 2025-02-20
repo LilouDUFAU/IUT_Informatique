@@ -1,0 +1,162 @@
+TD-TP2
+
+1.a. 
+Voiture.cpp:
+
+string Voiture::to_string() {
+    return "Voiture de la marque: " + this->getMarque() + " , immatriculée: " +this->getPlaque()  ;
+}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+Individu.cpp:
+string Individu::to_string() {
+    return "Individu: " +this->getNom +" " +this->getPrenom  ;
+}
+
+___________________________________________________________________________________________________
+1.b.
+main:
+
+Voiture voit1("RenaultClio","123AB64");
+Voiture voit2("Peugeot106","678CD96");
+Voiture voit3("CitroenPicasso","456EF75");
+
+Individu ind1("Dupond","Pierre");
+Individu ind2("Martin","Louis");
+Individu ind3("Durand","Marcel");
+
+___________________________________________________________________________________________________
+1.c.
+main:
+
+cout<<voit1.to_string()<<endl;
+cout<<voit2.to_string()<<endl;
+cout<<voit3.to_string()<<endl;
+
+cout<<ind1.to_string()<<endl;
+cout<<ind2.to_string()<<endl;
+cout<<ind3.to_string()<<endl;
+
+
+___________________________________________________________________________________________________
+Schéma UML:
+
+____________________________________						
+| Voiture							|	                     
+|---------------------------------------------|
+|ATTRIBUTS:						|
+|								|
+|-string _marque					|
+|-string _plaque					|
+|								|
+|CONSTRUCTEURS/DESTRUCTEURS:   |
+|								|
+|+Voiture							|
+|								|
+|ENCAPSULATION:				|
+|+get&set plaque,marque			|
+|								|
+|METHODES USUELLES	:			|
+|+string to_string()					|
+|___________________________________|
+		| 0..1
+		|
+		|
+		|  ^Conduire
+		|
+		| 0..1
+________|___________________________
+| Individu							|
+|-------------------------------------------- |
+|ATTRIBUTS:						|
+|								|	
+|-string _nom						|	
+|-string _prenom					|
+|								|
+|CONSTRUCTEURS/DESTRUCTEURS:   |
+|								|
+|+Individu						|
+|								|
+|ENCAPSULATION:				|
+|+get&set nom,prenom				|
+|								|
+|METHODES USUELLES	:			|
+|+string to_string()					|
+|__________________________________ |
+
+
+___________________________________________________________________________________________________
+2.a. A faire sur le code (.h)
+____________________________________						
+| Voiture							|	                     
+|---------------------------------------------|
+|ATTRIBUTS:						|
+|								|
+|-string _marque					|
+|-string _plaque					|
+|-individu* _ind					|
+|								|
+|CONSTRUCTEURS/DESTRUCTEURS:   |
+|								|
+|+Voiture							|
+|								|
+|ENCAPSULATION:				|
+|+get&set plaque,marque			|
+|	_monIndividu					|
+|								|
+|METHODES USUELLES	:			|
+|+string to_string()					|
+|___________________________________|
+		| 0..1
+		|
+		|
+		|  ^Conduire
+		|
+		| 0..1
+________|___________________________
+| Individu							|
+|-------------------------------------------- |
+|ATTRIBUTS:						|
+|								|	
+|-string _nom						|	
+|-string _prenom					|
+|-Voiture* _voit					|
+|								|
+|CONSTRUCTEURS/DESTRUCTEURS:   |
+|								|
+|+Individu						|
+|								|
+|ENCAPSULATION:				|
+|+get&set nom,prenom				|
+|	_maVoiture					|
+|								|
+|METHODES USUELLES	:			|
+|+string to_string()					|
+|__________________________________ |
+
+
+___________________________________________________________________________________________________
+2.b.
+main:
+
+voit3.setIndividu(&ind3); 
+ind3.setVoiture(&voit3);  
+
+___________________________________________________________________________________________________
+2.c.
+main:
+
+cout<<ind3.getVoiture()→getPlaque();
+
+___________________________________________________________________________________________________
+2.d.
+voit3.setPlaque("77777NO22");
+
+___________________________________________________________________________________________________
+2.e.
+cout<<ind3.getVoiture()→getPlaque();
+
+Oui, elle aura changé.
+
+___________________________________________________________________________________________________
+3.a.

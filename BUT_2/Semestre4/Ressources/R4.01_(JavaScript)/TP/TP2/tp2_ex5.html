@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function couleur(){
+            // recuperer la valeur dans le prompt
+            var couleur = prompt("Quelle couleur de fond souhaitez vous ? ");
+            // changer la couleur de fond
+            document.body.style.background = couleur;
+            }
+
+        function couleur2(){
+            // recuperer la valeur dans le prompt
+            var couleur = document.getElementById("couleur").value;
+            // changer la couleur de fond
+            document.body.style.background = couleur;
+        }
+    </script>
+    <title>CACA</title> 
+    <p>Souhaitez-vous changer de couleur de fond ? <button onclick="couleur()">Changer de couleur</button></p>
+
+    <p>Souhaitez-vous changer de couleur de fond ? 
+        <select id="couleur">
+            <option value="#C0C0C0">Gris</option>
+            <option value="#669999">Bleu</option>
+            <option value="#99FF66">Vert</option>
+        </select>
+        <button onclick="couleur2()">Changer de couleur</button>
+      
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+Voici la liste des entreprises et leurs coordonnées avec les numéros correctement ordonnés, sans les astérisques :
+
+1. Anaqua  
+   - Adresse : 26 Avenue de la Résistance, 64000 Pau  
+   - Secteur : Logiciels pour la gestion de la propriété intellectuelle  
+   
+2. Hydrétudes (Altereo)  
+   - Adresse : 3 Rue Ampère, 64420 Soumoulou  
+   - Secteur : Hydrologie et aménagement environnemental  
+   
+3. Nalta Systems  
+   - Adresse : 6 Passage de l'Europe, 64000 Pau  
+   - Secteur : Développement de logiciels et solutions IT  
+   
+4. Pyrénées On Line  
+   - Adresse : 2 Rue Thomas Edison, 64000 Pau  
+   - Secteur : Services numériques locaux  
+   
+5. Atos Worldgrid  
+   - Adresse : Technopole Hélioparc, 2 Avenue Pierre Angot, 64000 Pau  
+   - Secteur : Informatique et énergie  
+   
+6. Biotope  
+   - Adresse : 21 Rue Louis Barthou, 64000 Pau  
+   - Secteur : Écologie et gestion de la biodiversité  
+
+7. Brawo Search  
+   - Adresse : Pau, 64000  
+   - Contact RH : recrutement@brawo-search.com  
+   
+8. Manpower  
+   - Adresse : Pau, 64000  
+   - Contact RH : manpwr-recrutement@manpower.fr  
+   
+9. DAVRICOURT  
+   - Adresse : Pau, 64000  
+   - Contact RH : recrutement@davricourt.com  
+   
+10. Altereo (Soumoulou)  
+    - Adresse : 64420 Soumoulou, près de Pau  
+    - Contact RH : contact@altereo.com  
+   
+11. Biotope  
+    - Adresse : Pau, 64000  
+    - Contact RH : recrutement@biotope.fr  
+   
+12. Britvic Teisseire International  
+    - Adresse : Pau, 64000  
+    - Contact RH : recrutement@britvic.com  
+   
+13. The Space Team  
+    - Adresse : Pau, 64000  
+    - Contact RH : recrutement@spaceteam.fr  
+   
+14. Euratom  
+    - Adresse : Pau, 64000  
+    - Contact RH : recrutement@euratom.com  
+   
+15. Tech Industrie  
+    - Adresse : Pau, 64000  
+    - Contact RH : contact@techindustrie.com

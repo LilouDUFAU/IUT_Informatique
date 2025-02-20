@@ -1,0 +1,2 @@
+T peut etre: type primitif mais aussi nimporte quel objet de nimporte quelle classe
+

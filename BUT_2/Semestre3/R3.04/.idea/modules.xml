@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/R3.04.iml" filepath="$PROJECT_DIR$/.idea/R3.04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tp2/tp2.iml" filepath="$PROJECT_DIR$/tp2/tp2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tp3/tp3.iml" filepath="$PROJECT_DIR$/tp3/tp3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tp4/tp4.iml" filepath="$PROJECT_DIR$/tp4/tp4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tp5/tp5.iml" filepath="$PROJECT_DIR$/tp5/tp5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tp5_1/tp5_1.iml" filepath="$PROJECT_DIR$/tp5_1/tp5_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tp5_2/tp5_2.iml" filepath="$PROJECT_DIR$/tp5_2/tp5_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tp6/tp6.iml" filepath="$PROJECT_DIR$/tp6/tp6.iml" />
+    </modules>
+  </component>
+</project>

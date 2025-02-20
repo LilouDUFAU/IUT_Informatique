@@ -1,0 +1,13 @@
+qualites users story:
+
+Independant 
+Negociable
+Valuable
+Estimate
+Small
+Testable
+
+affinage/maturation
+tests
+donnees(→EIA,schema BD)
+interfaces/navigation

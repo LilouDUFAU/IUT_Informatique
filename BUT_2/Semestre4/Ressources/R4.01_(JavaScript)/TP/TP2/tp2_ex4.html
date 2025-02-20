@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function calculer(){
+            var getCalcul = document.getElementsByTagName("label");
+            var getResProp = document.getElementsByName("calcul");;
+            var nbRepFaux = 0;
+            for (var i=0; i<4; i++){
+                if(eval(getCalcul[i].innerText) == getResProp[i].value){
+                    getResProp[i].style.backgroundColor = "green";
+                } else {
+                    getResProp[i].style.backgroundColor = "red";
+                    nbRepFaux++;
+                }  
+            }
+            if(nbRepFaux == 0){
+                alert('Bravo !');
+            } else {
+                alert('Il y a ' + nbRepFaux + ' mauvaises réponses');
+            }
+
+        }
+
+    </script>
+    <title>NTM</title>
+</head>
+<body>
+    <form>
+        <label for="calcul1">2*3</label>
+        <input type="text" id="calcul1" name="calcul">
+        <br>
+
+        <label for="calcul2">6*7</label>
+        <input type="text" id="calcul2" name="calcul">
+        <br>
+
+        <label for="calcul3">4*4</label>
+        <input type="text" id="calcul3" name="calcul">
+        <br>
+
+        <label for="calcul4">3*5</label>
+        <input type="text" id="calcul4" name="calcul">
+        <br>
+
+        <input type="button" value="Calculer" onclick="calculer()">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+TD3
+
+Concepts clefs:
+Vol
+Hébergement		-|Prestation
+Place sur un vol	-|Prestation
+Réservation
+________________________________________________________________________________________
+Acteurs:
+Compagnie aérienne
+Client
+Hébergeur
+Visiteur
+________________________________________________________________________________________
+Interactions:
+Client: s'inscrire, s'identifier, rechercher, réserver, payer un place sur le vol, payer un hébergement
+
+
+Compagnie aérienne/ 					-|(proposer un vol), définir un vol
+Personnel de la compagnie aérienne      	-|(proposer un vol), définir un vol
+
+Hébergeur: définir un hébergement
+
+Visiteurs, client: rechercher un prestation
+
+Visiteur: s'inscrire, s'identifier
+

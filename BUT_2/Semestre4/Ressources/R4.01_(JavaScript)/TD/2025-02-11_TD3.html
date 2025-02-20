@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD3</title>
+</head>
+<body>
+    <p>voir question 1 <button onclick="monMax(2,3)">voir</button></p>
+    <p>voir question 2 <button onclick="calculer(5,1)">voir</button></p>
+
+    <form>
+        <label for="saisie1">Saisir un nombre</label>
+        <input type="number" id="saisie1" name="saisie1">
+
+        <label for="saisie2">Saisir un nombre</label>
+        <input type="number" id="saisie2" name="saisie2">
+
+        <input type="button" onclick="calculer2(saisie1.value,saisie2.value)" value="Calculer">
+    </form>
+
+    <p>voir la question 5 <button onclick="max4(1,2,3,5)">voir</button></p>
+
+    <p>voir la question 6 <button onclick="max8(1,20,3,4,5,6,7,9)">voir</button></p>
+
+    <p>voir la question 7 <button onclick="aleatoire()">voir</button></p>
+
+    <form>
+        <label for="saisie3">Veuillez entrer un nombre entre 0 et 100</label>
+        <input type="number" id="saisie3" name="saisie3">
+        <input type="button" onclick="gagne(saisie3.value)" value="Jouer">
+    </form>
+
+    <p>voir la question 9 <button onclick="gagne2(50)">voir</button></p>
+
+</body>
+<script>
+    // 1.
+    function monMax(a,b){
+        alert(Math.max(a,b));
+    }
+
+    // 2.
+    function calculer(a,b){
+        if (typeof parseInt(a) === "number" && typeof parseInt(b) === "number"){
+            alert(Math.max(a,b));
+        } else {
+            alert("Veuillez saisir des nombres");
+        }
+    }
+
+    // 3.
+    function calculer2(a,b){
+        if (typeof parseInt(a) === "number" && typeof parseInt(b) === "number"){
+            alert(Math.max(a,b));
+        } else {
+            alert("Veuillez saisir des nombres");
+        }
+    }
+
+    // 4.
+    // faire avec un document.getElementByTagName("input").value
+
+    // 5.
+    function max4(a,b,c,d){
+        alert(Math.max(a,b,c,d));
+    }
+
+    // 6.
+    function max8(a,b,c,d,e,f,g,h){
+        alert(Math.max(a,b,c,d,e,f,g,h));
+    }
+
+    // 7.
+    function aleatoire(){
+        var a;
+        var b;
+        var rand = Math.floor(Math.random() * 100);
+        return(rand);    
+    }
+
+    // 8.
+    function gagne(x){
+        if (aleatoire() == x){
+            alert("Gagné");
+        } else {
+            alert("Perdu, le nombre était " + aleatoire());
+        }
+    }
+
+    // 9.
+    function gagne2() {
+    var nbAleatoire = aleatoire(); // Supposons que la fonction aleatoire() existe et retourne un nombre entre 0 et 100
+    var nbchance = 10;
+    var x; // Déclaration de la variable pour stocker l'entrée utilisateur
+
+    while (nbchance > 0) {
+        x = parseInt(prompt("Veuillez entrer un nombre entre 0 et 100")); // Convertir l'entrée en nombre
+
+        if (isNaN(x) || x < 0 || x > 100) {
+            alert("Veuillez entrer un nombre valide entre 0 et 100.");
+            continue; // Redemande un nombre sans compter comme une tentative
+        }
+
+        if (nbAleatoire === x) {
+            alert("Gagné, le nombre était : " + nbAleatoire + " !");
+            break; // Sort de la boucle si l'utilisateur gagne
+        } else {
+            nbchance--; // On enlève une chance ici avant d'afficher le message
+            if (nbAleatoire > x) {
+                alert("Perdu, le nombre est plus grand, il vous reste " + nbchance + " chances.");
+            } else {
+                alert("Perdu, le nombre est plus petit, il vous reste " + nbchance + " chances.");
+            }
+        }
+    }
+
+    if (nbchance === 0) {
+        alert("Dommage, vous avez perdu ! Le nombre était " + nbAleatoire);
+    }
+}
+
+    
+</script>
+</html>

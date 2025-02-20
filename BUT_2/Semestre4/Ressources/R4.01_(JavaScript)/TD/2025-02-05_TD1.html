@@ -1,0 +1,189 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+
+        // Questions 1 / 2
+        function aire () {
+            var longueur = prompt("Entrez la longueur du rectangle");	
+            var largeur = prompt("Entrez la largeur du rectangle");
+            var aire = longueur * largeur;
+            alert ("L'aire du rectangle est de " + aire + " m²");
+            return [aire, longueur, largeur];
+        }
+
+        // Question 3
+        function perimetre(){
+            var longueur = prompt("Entrez la longueur du rectangle");
+            var largeur = prompt("Entrez la largeur du rectangle");
+            var perimetre = 2 * longueur + 2 * largeur;
+            // ajouter une div avec le text
+            var divPerimetre = document.createElement("div"); //création d'un élément div
+            var textPerimetre = document.createTextNode("Le périmètre du rectangle est de " + perimetre + " m, avec fonction perimetre()"); //création d'un noeud texte
+            divPerimetre.appendChild(textPerimetre); // ajout du noeud texte à l'élément div
+            document.body.appendChild(divPerimetre); // ajout de l'élément div au body
+
+            // document.write("Le périmètre du rectangle est de " + perimetre + " m"); //sur une autre page
+        }
+
+        // Question 4 
+        function perimetre2(){
+            var longueur = document.getElementById("longueur").value;
+            var largeur = document.getElementById("largeur").value;
+            var perimetre = 2 * longueur + 2 * largeur;
+            // ajouter une div avec le text
+            var divPerimetre = document.createElement("div"); //création d'un élément div
+            var textPerimetre = document.createTextNode("Le périmètre du rectangle est de " + perimetre + " m, avec fonction perimetre2()"); //création d'un noeud texte
+            divPerimetre.appendChild(textPerimetre); // ajout du noeud texte à l'élément div
+            document.body.appendChild(divPerimetre); // ajout de l'élément div au body
+
+            // document.write("Le périmètre du rectangle est de " + perimetre + " m"); //sur une autre page
+        }
+
+        // Question 5
+        function jourMois(){
+            var mois = document.getElementById("mois").value;
+            var annee = document.getElementById("annee").value;
+            var nbJours = 0;
+            switch (mois) {
+                case "janvier":
+                case "mars":
+                case "mai":
+                case "juillet":
+                case "aout":
+                case "octobre":
+                case "decembre":
+                    nbJours = 31;
+                    break;
+                case "fevrier":
+                    if (annee % 4 == 0 && annee % 100 != 0 || annee % 400 == 0) {
+                        nbJours = 29;
+                    } else {
+                        nbJours = 28;
+                    }
+                    break;
+                case "avril":
+                case "juin":
+                case "septembre":
+                case "novembre":
+                    nbJours = 30;
+                    break;
+                default:
+                    alert("Mois inconnu");
+            }
+            alert("Le mois de " + mois + " " + annee + " a " + nbJours + " jours");
+        }
+
+        // Question 5
+        function jourMoisAutomatique(){
+            var annee = prompt("Entrez l'année (ex.2020)");
+            var mois = prompt("Entrez le mois (de 1 à 12)");
+            while (mois < 1 || mois > 12) {
+                alert("Veuillez entrer des valeurs valides");
+                annee = prompt("Entrez l'année (ex.2020)");
+                mois = prompt("Entrez le mois (de 1 à 12)");
+            }
+            var nbJours = new Date(annee, mois, 0).getDate();
+            alert("Le mois de " + mois + " " + annee + " a " + nbJours + " jours");
+        }
+
+        // Question 6
+        function tableMultiplication() {
+                var entier = prompt("Entrez un entier entre 1 et 10");
+                if (entier < 1 || entier > 10 || !Number.isInteger(Number(entier))) {
+                    alert("Veuillez entrer un entier entre 1 et 10");
+                }
+                else {
+                    var table = "";
+                    for (var i = 1; i <= 10; i++) {
+                        table += entier + " x " + i + " = " + entier * i + " || ";
+                    }
+                    var divTable = document.createElement("div"); //création d'un élément div
+                    var textTable = document.createTextNode(table); //création d'un noeud texte
+                    divTable.appendChild(textTable); // ajout du noeud texte à l'élément div
+                    document.body.appendChild(divTable); // ajout de l'élément div au body  
+                }
+            }
+
+        // Questino 7
+        function calculer(){
+            var calcul = document.getElementById("calcul").value;
+
+            try{
+                // afficher le resultat dans le input resultat
+                document.getElementById("resultat").value = eval(calcul);
+            }catch{
+                alert("Erreur de calcul");
+            }
+            
+        }
+    </script>
+
+    <title>Exercice TD 1</title>
+</head>
+<body>
+    <h1>Ecriture d'une fonction simple</h1>
+    
+    <h3><u>Questions 1 et 2</u></h3>
+    <p>Calculer l'aire d'un rectangle : <button onclick="aire()">Calculer</button></p>
+    
+    <h3><u>Question 3</u></h3>
+    <p>Calculer le périmètre d'un rectangle : <button onclick="perimetre()">Calculer</button></p>
+    
+    <h3><u>Question 4</u></h3>
+    <form>
+        <label for="longueur">Longeur du rectangle :</label>
+        <input type="text" id="longueur" placeholder="Longueur">
+        <br><br>
+        <label for="largeur">Largeur du rectangle :</label>
+        <input type="text" id="largeur" placeholder="Largeur">
+        <input type="button" value="Calculer" onclick="perimetre2()">
+    </form>
+
+    <h3><u>Question 5</u></h3>
+    <form>
+        <input type="text" id="mois" placeholder="Mois">
+        <input type="text" id="annee" placeholder="Année">
+        <input type="button" value="Calculer" onclick="jourMois()">
+    </form>
+    <p>Nombre de jour automatique : <button onclick="jourMoisAutomatique()">Calculer</button></p>
+
+    <h3><u>Question 6</u></h3>
+    <p>Afficher la table de multiplication d'un entier : <button onclick="tableMultiplication()">Afficher</button></p>
+
+    <h3><u>Question 7</u></h3>
+    <form>
+        <input type="text" id="calcul" placeholder="Calcul">
+        <input type="button" onclick="calculer()" value="="></input>
+        <input type="text" id="resultat" placeholder="Résultat">
+
+    </form>
+    
+    
+</body>
+</html>
+
+
+<!-- COMMANDES A CONNAITRE -->
+
+<!-- document.write("texte") -->
+<!-- alert("texte") -->
+<!-- prompt("texte") -->
+<!-- console.log("texte") -->
+<!-- document.getElementById("id") -->
+<!-- document.getElementsByTagName("div") -->
+<!-- document.getElementsByName("nom") -->
+<!-- document.getElementsByClassName("class") -->
+<!-- document.querySelector("#id") -->
+<!-- document.querySelector(".class") -->
+<!-- document.querySelectorAll(".class") -->
+<!-- document.createElement("div") -->
+<!-- document.createTextNode("texte") -->
+<!-- document.appendChild("div") -->
+<!-- document.insertBefore("div") -->
+<!-- document.removeChild("div") -->
+<!-- document.replaceChild("div") -->
+
+<!-- <div id="id" class="class"> </div> -->
+<!-- <div class="class"> </div> -->

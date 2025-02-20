@@ -1,0 +1,28 @@
+1-	4 processus :
+
+		(P1)abc
+		/	\
+	(P2)bc	(P4)c
+	/
+(P3)c	
+- - - - - - - - - - - - - - - - - 
+	A:1
+	B:2
+	C:4
+-----------------------------------
+2)a-
+
+#include <stdio.h>
+	
+	//définir les variables
+int tab[1000000];
+int elementATrouver;
+
+
+ 
+
+	//saisir la valeur à rechercher
+
+	//créer le processus fils
+
+	//traiter les différents cas

@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="td1" version="4">
+  <OBJECT>
+    <ID name="td1" mc="Standard.Package" uid="1f785b83-ec2e-4098-ba62-b3a022685bc5"/>
+    <PID name="TD1" mc="Standard.Project" uid="abe018ec-7ff1-48f4-a11f-ecdb727d3614"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[td1]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="utilisateur" mc="Standard.Actor" uid="b2d4d5b2-9855-4ccc-84ce-145919c070cb"/>
+        <COMPID name="admin" mc="Standard.Actor" uid="102c9cd9-d133-4e0f-aebf-6c5161ef01c7"/>
+        <COMPID name="administrer le site" mc="Standard.UseCase" uid="e6ec601f-1b43-4d39-b67b-91699e22cf7e"/>
+        <COMPID name="utiliser le site" mc="Standard.UseCase" uid="89ea28f0-fa84-4ed8-b522-4955fec38d99"/>
+        <COMPID name="admin" mc="Standard.Actor" uid="950ee345-89bb-4a29-a98f-f66d81569ca2"/>
+        <COMPID name="visiteur" mc="Standard.Actor" uid="7309d18a-1744-4dad-84fd-7bc9e250b6d5"/>
+        <COMPID name="Administrer le site" mc="Standard.UseCase" uid="cab9ee75-2bb8-4d79-bced-c59c57c47934"/>
+        <COMPID name="utilisateur" mc="Standard.Actor" uid="4e49ea20-d349-4cf0-9466-7dd9d4595937"/>
+        <COMPID name="acteur du tournoi" mc="Standard.Actor" uid="0d33517c-b94d-4fdb-b252-504d1c7b969a"/>
+        <COMPID name="utiliser le site" mc="Standard.UseCase" uid="fac8ef26-877f-4d08-a644-fc185af518fb"/>
+        <COMPID name="s'inscrire au tournoi" mc="Standard.UseCase" uid="3069b7b2-21e3-4148-ac87-c8915f929a6d"/>
+        <COMPID name="consulter l'état du tournoi" mc="Standard.UseCase" uid="8965d1a0-2d95-45a2-8297-c2a152bf5d7e"/>
+        <COMPID name="participer au tournoi" mc="Standard.UseCase" uid="7240dcf4-e40a-439b-a44e-f48465fed51a"/>
+        <COMPID name="s'inscrire sur le site" mc="Standard.UseCase" uid="12fa88fa-a11a-4c4a-97b7-ab28a9857afa"/>
+        <COMPID name="communiquer par mail" mc="Standard.UseCase" uid="25458d59-254c-4e24-bb90-aa83e2a1f900"/>
+        <COMPID name="s'identifier" mc="Standard.UseCase" uid="b883bc70-c30a-4b4b-8f52-87c20bb8f1c4"/>
+        <COMPID name="visiteur" mc="Standard.Actor" uid="54dfea2f-bb84-40cc-90cc-93a2422554ee"/>
+        <COMPID name="acteur du tournoi" mc="Standard.Actor" uid="bd71cd6a-3a72-480d-912b-78b7efd50c4f"/>
+        <COMPID name="joueur" mc="Standard.Actor" uid="f7b328c6-b1ab-4a27-bef1-93dc09138850"/>
+        <COMPID name="juge" mc="Standard.Actor" uid="0a93472b-9d46-4cbc-a9ec-71d24cb0b17d"/>
+        <COMPID name="organisation" mc="Standard.Actor" uid="ebe78dcc-bbf2-420f-84cb-48a33686d258"/>
+        <COMPID name="administrateur" mc="Standard.Actor" uid="14bc2c35-e845-4723-afc3-b234966a1dcc"/>
+        <COMPID name="s'inscrire au tournoi" mc="Standard.UseCase" uid="a346d78b-7680-4921-98cf-faf434a260cb"/>
+        <COMPID name="s'inscrire sur le site" mc="Standard.UseCase" uid="ce3c65fd-0a52-40d5-92e1-be571ad75205"/>
+        <COMPID name="consulter l'état du tournoi" mc="Standard.UseCase" uid="e6d89950-7ad1-4089-81ca-3ced2f65a8da"/>
+        <COMPID name="s'identifier" mc="Standard.UseCase" uid="5fbdbd67-e951-4d05-9ebc-5ec833d09944"/>
+        <COMPID name="participer au tournoi" mc="Standard.UseCase" uid="3d3bcb5e-5d4f-456f-a4d2-c94a6ed25627"/>
+        <COMPID name="proposer une modification de date" mc="Standard.UseCase" uid="622ca6b2-5943-426f-b6e6-ddb302e300ee"/>
+        <COMPID name="jouer au tournoi" mc="Standard.UseCase" uid="aa58e5a4-1ebe-434a-b8be-031d24add360"/>
+        <COMPID name="arbitrer au tournoi" mc="Standard.UseCase" uid="3449d08c-0d37-45b0-b408-e98f3046be37"/>
+        <COMPID name="gérer le tournoi" mc="Standard.UseCase" uid="64045e69-89ef-4753-8e0a-9b6f4bf42bfd"/>
+        <COMPID name="répondre proposition de date" mc="Standard.UseCase" uid="d405b8a1-60ed-4d1e-aac4-a96e41fbae8b"/>
+        <COMPID name="communiquer mail" mc="Standard.UseCase" uid="6f1ec035-531c-4368-93a0-f12df3ce18b0"/>
+        <COMPID name="modifier scores" mc="Standard.UseCase" uid="ad607561-1ad3-4211-8f75-89d756861fa1"/>
+        <COMPID name="administrer site" mc="Standard.UseCase" uid="4f74f3ff-3929-4551-b4f8-b783b5df8e0a"/>
+        <COMPID name="enregistrer score" mc="Standard.UseCase" uid="0a65587b-febe-4571-a27b-4a8418f0d654"/>
+        <COMPID name="juge" mc="Standard.Actor" uid="bd6a86a4-83f8-433d-889c-c564dd58a02c"/>
+        <COMPID name="organisateur" mc="Standard.Actor" uid="64c237a0-4b9b-4ba2-810c-4a2b5ea404f8"/>
+        <COMPID name="valider inscription sur le site" mc="Standard.UseCase" uid="738ad79c-0d14-4343-a88a-71c6d7860172"/>
+        <COMPID name="valider inscription au tournoi" mc="Standard.UseCase" uid="7d00ab2b-e888-4127-9d45-909c0a3b25ab"/>
+        <COMPID name="créer une partie" mc="Standard.UseCase" uid="00b0544b-1664-4fd6-97f1-1ebfc4d28083"/>
+        <COMPID name="proposer dates de parties" mc="Standard.UseCase" uid="d5fad459-3ef2-4d8c-a12d-7d38601fd0b1"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de cas d'utilisation n°1 (Q1) td1" mc="Standard.UseCaseDiagram" uid="c28b4534-2f22-4374-972b-7ef75de03203"/>
+        <COMPID name="Diagramme de cas d'utilisation n°2 (Q1) td1" mc="Standard.UseCaseDiagram" uid="062b2223-0a1b-43fb-8c60-3c82a53c6cf4"/>
+        <COMPID name="Diagramme de cas d'utilisation n°3 (Q1) td1" mc="Standard.UseCaseDiagram" uid="fc394e5d-149d-488f-bd65-9cfc6b6efc17"/>
+        <COMPID name="Diagramme de cas d'utilisation n°1 (Q2) td1" mc="Standard.UseCaseDiagram" uid="7e459f1e-e84d-4517-ab6b-d56fe4ac83bd"/>
+        <COMPID name="Diagramme de cas d'utilisation n°1 (Q3) td1" mc="Standard.UseCaseDiagram" uid="bfa501f7-eb2d-4396-9135-a261d5629841"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

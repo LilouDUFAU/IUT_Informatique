@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="tp" version="4">
+  <OBJECT>
+    <ID name="tp" mc="Standard.Package" uid="7eb88a08-7d2c-4188-9a6a-5b191b18cc36"/>
+    <PID name="TP" mc="Standard.Project" uid="5fd82fe3-5aa6-4eb6-9c48-7cc9dacc9a5f"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[tp]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="e38f00cc-5f67-4723-94c7-3b9f087a5b33"/>
+        <COMPID name="State Machine" mc="Standard.StateMachine" uid="ad85fea1-e2af-4467-be8d-774e9c678c80"/>
+        <COMPID name="Activity" mc="Standard.Activity" uid="de11cdf3-3016-4d44-9d10-eb1c5d13ae73"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="utiliser le site" mc="Standard.UseCase" uid="252f045d-730b-447f-8b61-32a01e9213c2"/>
+        <COMPID name="gerer les reunions" mc="Standard.UseCase" uid="65d250bb-b58a-4481-afb5-257c01bb8fe0"/>
+        <COMPID name="s'identifier" mc="Standard.UseCase" uid="9ca4cf4c-6dd3-4205-9ba6-abf187157968"/>
+        <COMPID name="participer a une reunion" mc="Standard.UseCase" uid="ee5a35f8-a2b2-44b1-909f-82344951a372"/>
+        <COMPID name="choisir des enseignants" mc="Standard.UseCase" uid="e6b52826-43bd-4671-8561-1136797c8f5a"/>
+        <COMPID name="modifier une reunion" mc="Standard.UseCase" uid="0b46b9f3-d234-45d9-8572-ffa703405c8b"/>
+        <COMPID name="annuler une reunion" mc="Standard.UseCase" uid="b2b44763-8d53-48a5-80bb-b6982bca442a"/>
+        <COMPID name="plannifier une reunion" mc="Standard.UseCase" uid="4b2cd7a0-341a-4702-91c3-f374c5bbb3b0"/>
+        <COMPID name="module d'inscription" mc="Standard.Actor" uid="7c8f4a6a-e15c-4b1c-8500-399b74c974ff"/>
+        <COMPID name="logiciel de scolarite" mc="Standard.Actor" uid="0320f674-275f-4772-afed-f637d869cc5d"/>
+        <COMPID name="utilisateur" mc="Standard.Actor" uid="c06111bc-a7d6-4924-83b7-f9ba0578088d"/>
+        <COMPID name="logiciel de scolarité" mc="Standard.Actor" uid="9e9fed13-e42c-4858-be54-c985ce358e7e"/>
+        <COMPID name="module d'inscription" mc="Standard.Actor" uid="b181d8f1-a4af-41cb-9aac-e82722ef9d5c"/>
+        <COMPID name="administrateur" mc="Standard.Actor" uid="61746a0b-9cdd-40f7-a36e-df94bb8fc992"/>
+        <COMPID name="participant" mc="Standard.Actor" uid="eb588ca0-a690-4226-af96-6fcc2f2b280f"/>
+        <COMPID name="parent" mc="Standard.Actor" uid="71e1cfac-6d54-4c56-8925-ba4559f667a5"/>
+        <COMPID name="administrateur" mc="Standard.Actor" uid="e79ac1e9-c247-448c-bfd2-ae96af06d16c"/>
+        <COMPID name="participant" mc="Standard.Actor" uid="808db716-6dc8-4596-8575-7cd06d4af4d1"/>
+        <COMPID name="confirmer sa présence" mc="Standard.UseCase" uid="c15f2fd3-ba15-4535-8172-f99f82bfd5ff"/>
+        <COMPID name="indiquer leur arrivée " mc="Standard.UseCase" uid="83cb77f7-ecb4-4929-ba2c-50ae2153cafb"/>
+        <COMPID name="indiquer leur départ" mc="Standard.UseCase" uid="465748b5-e04a-48cd-aff0-01cd63af6a1a"/>
+        <COMPID name="indiquer le début de l'entretien" mc="Standard.UseCase" uid="948c103a-3ec0-4d9f-bb98-20ceb0015768"/>
+        <COMPID name="indiquer la fin de l'entretien" mc="Standard.UseCase" uid="c1cf34d3-34de-4242-a0da-57edde8c25e9"/>
+        <COMPID name="module d'inscription" mc="Standard.Actor" uid="338a7791-519d-4ef6-a18e-f15fca372de3"/>
+        <COMPID name="Reunion" mc="Standard.Class" uid="aa69d351-5621-4962-8821-826ad779f3f2"/>
+        <COMPID name="Entretien" mc="Standard.Class" uid="ae485e38-f8e8-4468-8711-98405bb305e2"/>
+        <COMPID name="enseignant" mc="Standard.Actor" uid="8c053163-e07c-4604-8ea0-b75dc5ee7b55"/>
+        <COMPID name="s'identifier" mc="Standard.UseCase" uid="f3203b96-99a4-40bc-8a4d-ece6a6ac1313"/>
+        <COMPID name="utiliser le site" mc="Standard.UseCase" uid="72cb90b1-e6a0-4964-972e-a34ad4ebc3ad"/>
+        <COMPID name="utilisateur" mc="Standard.Actor" uid="88872547-7a3f-4432-aa6c-16e963e187b6"/>
+        <COMPID name="Parent" mc="Standard.Class" uid="487313ac-4021-40f3-ac35-76c1c0dd44cb"/>
+        <COMPID name="Enseignant" mc="Standard.Class" uid="fcde3a5a-b5d1-4ecb-b45d-ccbf22a614ca"/>
+        <COMPID name="Eleve" mc="Standard.Class" uid="df24e6ec-900c-46be-82ad-64411cdeb70f"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Q1" mc="Standard.UseCaseDiagram" uid="1883ad67-2607-4e75-963b-133273899c96"/>
+        <COMPID name="Q2" mc="Standard.UseCaseDiagram" uid="1c039a3f-bba4-464e-97e9-f6ccd9f40f17"/>
+        <COMPID name="Q3" mc="Standard.UseCaseDiagram" uid="6d19b9cb-0694-49b0-89e3-4b88166ae708"/>
+        <COMPID name="Q9" mc="Standard.ClassDiagram" uid="0210a8b4-d5b7-4448-a2ca-729ce46bf50e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

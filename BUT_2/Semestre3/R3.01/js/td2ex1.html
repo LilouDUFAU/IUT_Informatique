@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0, shrink-to-fit=no">
+
+    <title>monFormulaire</title>
+<head>
+
+<body>
+    <form name="formulaire" id="form">
+        <input type="texte" value=" " />
+    </form>
+
+    <script>
+        let form1 = document.getElementsByTagName("form")[0];
+        let input = form1.firstChild;
+
+        let newLabel = document.createElement("label");
+        let textNode = document.createTextNode("Entrez l'item recherché : ");
+        newLabel.appendChild(textNode);
+
+        form1.insertBefore(newLabel, input)
+    </script>
+</body>

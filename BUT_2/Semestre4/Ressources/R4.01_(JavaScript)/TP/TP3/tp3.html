@@ -1,0 +1,133 @@
+<!-- Exercice 1: contact.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script>
+        // Vérifier si JavaScript est activé
+        if (navigator.javaEnabled()) {
+            alert("Non.");
+            history.back();
+        }
+
+        // Vérifier le navigateur (seulement Chrome accepté)
+        if (!navigator.userAgent.includes("Chrome")) {
+            alert("Non.");
+            history.back();
+        }
+
+        // Vérifier la langue du navigateur
+        if (!navigator.language.startsWith("fr")) {
+            alert("Non.");
+            history.back();
+        }
+
+        // Générer un code de vérification aléatoire
+        let verificationCode = Math.floor(Math.random() * 10000);
+        
+        function checkRobot() {
+            // let aleatoire = Math.floor(Math.random() * 100) + 1; // Nombre aléatoire entre 1 et 100
+            let aleatoire = 50;
+            let chance = 10;
+            let chiffre;
+            while (chance > 0) {
+                chiffre = parseInt(prompt("Devinez un nombre entre 1 et 100 :"));
+                if (chiffre === aleatoire) {
+                    alert("Vérification réussie.");
+                    return;
+                } else if (chiffre > aleatoire) {
+                    alert("Trop grand !");
+                } else {
+                    alert("Trop petit !");
+                }
+                chance--;
+            }
+            alert("Vous avez échoué. Retour à la page précédente.");
+            history.back();
+        }
+        window.onload = checkRobot;
+    </script>
+    <style>
+        .error { border: 2px solid red; }
+    </style>
+</head>
+<body>
+    <h2>Formulaire de Contact</h2>
+    <form id="contactForm">
+        Nom: <input type="text" id="name" required><br>
+        Email: <input type="email" id="email" required><br>
+        Sujet: <input type="text" id="subject" required><br>
+        Vérification: <input type="text" id="verification" required> <span id="code">(Code: <b id="randomCode"></b>)</span><br>
+        Catégorie:
+        <select id="category">
+            <option>Smart Building</option>
+            <option>Energy Management</option>
+            <option>Ontology</option>
+            <option>Micro Grid</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="text" id="newCategory" style="display:none;" placeholder="Nouvelle catégorie"><br>
+        Message:<br>
+        <textarea id="message" required></textarea><br>
+        <input type="button" id="buttonsubmit" value="Envoyer">
+    </form>
+    
+    <script>
+        document.getElementById("randomCode").textContent = verificationCode;
+        
+        document.getElementById("category").addEventListener("change", function() {
+            let newCategory = document.getElementById("newCategory");
+            if (this.value === "other") {
+                newCategory.style.display = "inline";
+                newCategory.required = true;
+            } else {
+                newCategory.style.display = "none";
+                newCategory.required = false;
+            }
+        });
+        
+        document.getElementById("buttonsubmit").addEventListener("click", function(event) {
+            let name = document.getElementById("name");
+            let email = document.getElementById("email");
+            let subject = document.getElementById("subject");
+            let verification = document.getElementById("verification");
+            let message = document.getElementById("message");
+            let valid = true;
+
+            // Vérification des champs obligatoires
+            [name, email, subject, verification, message].forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add("error");
+                    valid = false;
+                } else {
+                    field.classList.remove("error");
+                }
+            });
+
+            // Vérification email
+            if (!/^[^@]+@[^@]+\.[^@]+$/.test(email.value)) {
+                email.classList.add("error");
+                valid = false;
+            }
+
+            // Vérification du code
+            if (verification.value != verificationCode) {
+                alert("Code incorrect. Génération d'un nouveau code.");
+                verificationCode = Math.floor(Math.random() * 10000);
+                document.getElementById("randomCode").textContent = verificationCode;
+                verification.focus();
+                valid = false;
+            }
+            
+            if (!valid) {
+                event.preventDefault();
+            } else {
+                alert("Merci " + name.value + "! Votre message a été envoyé.");
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
