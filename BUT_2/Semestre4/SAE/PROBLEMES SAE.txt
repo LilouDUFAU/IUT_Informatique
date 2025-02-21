@@ -1,0 +1,10 @@
+PROBLEMES SAE
+
+pb:
+actualité mal stocke (ajouter des categorie pour culture)
+	quand on va sur actualites ya pas tout
+	quand on click sur l'actualité (index) on doit tomber sur la page de l'actualite 
+
+
+pb:
+retour en arriere avec la fleche (souvent erreur) 
