@@ -1,21 +1,25 @@
-1. Créer un projet Laravel :
+# Création du projet 
+
+## Créer un projet Laravel 
+Dans le terminal
 ```bash
 laravel new <nomProjet>
 ``` 
 
-2. Aller dans le projet
+## Aller dans le projet
+Dans le terminal
 ```bash
 cd <nomProjet>
 ```
+___
+# Premiers pas
 
-3. Migrer la bd :
+## Migrer la bd
 ```bash
 php artisan migrate
 ```
-
-4. Si erreur :
-→app→providers→appServiceProvider.php
-
+*** Si erreur : ***
+projet→app→providers→appServiceProvider.php
 ```php
 use Illuminate\Support\Facades\Schema;
 
@@ -29,19 +33,21 @@ class AppServiceProvider extends ServiceProvider {
 }
 ```
 
-5. Démarrer le serveur :
-```bash 
+## Démarrer le serveur 
+```bash
 php artisan serve
 ```
+___
+# Modèles et migrations
 
-6. Créer un model et sa migration :
+## Créer un model et sa migration 
+Dans le terminal
 ```bash 
 php artisan make:model <nomModel> -m
 ```
 
-7. Remplir les models :
-→app→model→<nomModel>
-
+## Remplir les models :
+projet→app→model→<nomModel>
 ```php
 class <nomClass> extends Model
 {
@@ -56,9 +62,8 @@ class <nomClass> extends Model
 }
 ```
 
-8. Si il y a des relations :
-→app→model→<nomModel>
-
+*** S' il y a des relations ***
+projet→app→model→<nomModel>
 ```php
 // si l'élément a un 
 public function reservation(){
@@ -76,8 +81,8 @@ public function reservations(){
     }
 ```
 
-9. Remplir les migrations
-→database→migration→<nomMigration>
+## Remplir les migrations
+projet→database→migration→<nomMigration>
 ```php
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -98,21 +103,23 @@ return new class extends Migration
 }
 ```
 
-10. Mettre a jour la bd :
+## Mettre a jour la bd 
+Dans le terminal
 ```bash
 php artisan migrate:fresh
 ```
 
-11. Créer un seeder
+___
+# Seeder
+## Créer un seeder
+Dans le terminal
 ```bash
 php artisan make:seeder <nomTableSeeder>
-``
+```
 
-12. Modifier le fichier du seeder :
-→database→seedee→<nomSeeder>
+## Modifier le fichier du seeder 
+projet→database→seedee→<nomSeeder>
 ```php
-<?php
-
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
@@ -146,8 +153,8 @@ class UsersTableSeeder extends Seeder
 }
 ```
 
-13. Ajouter le seeder dans databaseseeder
-→database→seeders→databaseseeder
+## Ajouter le seeder dans databaseSeeder
+projet→database→seeders→databaseseeder
 ```php
 public function run(): void
 {
@@ -155,52 +162,55 @@ public function run(): void
 }
 ```
 
-14. Executer le seeder :
+## Exécuter le seeder 
+Dans le terminal
 ```bash 
 php artisan db:seed --class=UsersTableSeeder
 ```
 
-15. Pour reutiliser et remplir la base :
+## Pour réutiliser et remplir la base 
+Dans le terminal
 ```bash 
 php artisan migrate:fresh --seed
 ```
+___
+# Controller et routes
 
-16. Créer un controller :
+## Créer un controller 
+Dans le terminal
 ```bash
 php artisan make:controller <nomController> --resource
 ```
 
-17. Definir les routes :
-→routes→web.php
+## Définir les routes :
+projet→routes→web.php
 ```php
 use App\Http\Controllers\ClientController;
 
 Route::resource('clients', ClientController::class);
 ```
 
-18. Verifier les routes :
+*** Vérifier les routes ***
+Dans le terminal
 ```bash
 php artisan route:list
 ```
+___
+# Authentification
 
-19. mettre en place l'authentification
+## Mettre en place l'authentification
+Dans le terminal
 ```bash
 composer require laravel/ui
-
 php artisan ui bootstrap --auth
-
 npm install
-
 npm run build
-
 npm run dev
 ```
 
-20. modifier le controller 
-→app→http→controllers→<nomController>
+## Modifier le controller 
+projet→app→http→controllers→<nomController>
 ```php 
-<?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -265,6 +275,11 @@ class ClientController extends Controller
     }
 }
 ```
+___
+# Les vues
+
+Faire les vues et ajouter bootstrap ou tailwind
+
 
 
 
