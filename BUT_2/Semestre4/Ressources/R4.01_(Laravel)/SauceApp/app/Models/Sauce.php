@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Sauce extends Model
 {
     use HasFactory;
-    protected $fillable = ['name','userId'];
+    protected $fillable = ['name','userId','manufacturer','description','mainPepper','imageUrl','heat'];
 
     //Ajouter une sauce en bd
     public function addSauce($sauce){

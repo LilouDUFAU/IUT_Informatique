@@ -33,23 +33,27 @@ class SauceController extends Controller
         'name' => $request->name,
         'manufacturer' => $request->manufacturer,
         'description' => $request->description,
-        'imageUrl' => $request->imageUrl,
+        'imageUrl' => $request->image,
         'mainPepper' => $request->mainPepper,
         'heat' => $request->heat,
         'userId' => Auth::id(), // Récupérer l'utilisateur connecté
     ]);
+    return redirect()->route('sauces.index');
 }
 
     public function update(Request $request, $id)
     {
         $sauce = Sauce::findOrFail($id);
         $sauce->update($request->all());
-        return response()->json($sauce, 200);
+        // return response()->json($sauce, 200);
+        return redirect()->route('sauces.index');
     }
+
 
     public function destroy($id)
     {
         Sauce::destroy($id);
-        return response()->json(null, 204);
+        // return response()->json(null, 204);
+        return redirect()->route('sauces.index');
     }
 }
