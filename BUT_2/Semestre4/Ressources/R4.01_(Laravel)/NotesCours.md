@@ -76,6 +76,12 @@ public function <relation>() {
     return $this->belongsTo(<nomModel>::class, '<relation>', 'id');
 }
 
+// Un élément peut être associé à plusieurs enregistrements d'un autre modèle (relation Many-to-Many).
+public function <relation>() {
+    return $this->belongsToMany(<NomModel>::class, '<nom_table_pivot>');
+}
+
+
 // Un élément a plusieurs relations
 public function <relation>() {
     return $this->hasMany(<nomModel>::class, 'id', 'id');
@@ -178,7 +184,14 @@ Fichier : `routes/web.php`
 ```php
 use App\Http\Controllers\<nomController>;
 
+// Pour un contrôleur correspondant à un contrôleur généré avec l'option --ressources
 Route::resource('<nomRoute>', <nomController>::class);
+
+
+// Pour des routes spécifiques
+Route::methodeHttp('<nomRoute>', [<nomController>::class, 'nom_fonction']);
+
+Route::methodeHttp('<nomRoute>', 'App\Http\Controllers\<nomController>@nom_fonction');
 ```
 
 ### 🔍 Vérifier les routes
