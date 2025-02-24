@@ -15,6 +15,7 @@ CREATE TABLE nomTable (
  	attributs 2,
  	attributs ...,
  	nomAttribut t_nomType ) ;
+```
 
 ___
 creation de table avec un tab de type :
