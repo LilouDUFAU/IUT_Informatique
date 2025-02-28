@@ -5,38 +5,39 @@ L’auteur, journaliste professionnel, a postulé à un emploi et a dû passer d
 ___
 # Task 2
 
-**Subject: Evaluation of the Effectiveness of AI Recruitment Tools**
+**Subject : Evaluation of the Effectiveness of AI Recruitment Tools**
 
-Dear Sir,  
+Dear Mister Smith,  
 
 Following your request regarding the effectiveness of artificial intelligence (AI) recruitment tools, please find below an analysis of their advantages and disadvantages in the context of our hiring process.  
 
-Advantages:
+Advantages :
 
-Increased efficiency and time savings: AI enables the automation of candidate pre-selection, significantly reducing the time spent reviewing applications and CVs. This is particularly beneficial when managing a high volume of applications.  
+	Increased efficiency and time savings : AI enables the automation of candidate pre-selection, significantly reducing the time spent reviewing applications and CVs. This is particularly beneficial when managing a high 	volume of applications.  
 
-Objectivity and bias reduction: Unlike human recruiters, who may be influenced by unconscious biases, AI applies standardized and objective criteria to assess candidates’ qualifications and personality traits.  
+	Objectivity and bias reduction : Unlike human recruiters, who may be influenced by unconscious biases, AI applies standardized and objective criteria to assess candidates’ qualifications and personality traits.  
 
-Advanced data analysis: AI-driven tools leverage algorithms to identify the most suitable candidates based on predefined criteria and historical recruitment success patterns.  
+	Advanced data analysis : AI-driven tools leverage algorithms to identify the most suitable candidates based on predefined criteria and historical recruitment success patterns.  
 
-Enhanced accessibility and flexibility: Candidates can complete assessments remotely, simplifying the process and minimizing logistical constraints for the company.  
+	Enhanced accessibility and flexibility : Candidates can complete assessments remotely, simplifying the process and minimizing logistical constraints for the company.  
 
-Disadvantages:
+Disadvantages :
 
-Lack of human assessment at the initial stage: AI-based filtering may lead to the unfair elimination of candidates due to misinterpretation of results or an overly rigid analysis of responses.  
+	Lack of human assessment at the initial stage : AI-based filtering may lead to the unfair elimination of candidates due to misinterpretation of results or an overly rigid analysis of responses.  
 
-Potential algorithmic bias: If AI is trained on biased datasets, it may replicate and even amplify these biases, potentially undermining diversity and inclusion in recruitment.  
+	Potential algorithmic bias : If AI is trained on biased datasets, it may replicate and even amplify these biases, potentially undermining diversity and inclusion in recruitment.  
 
-Impersonal candidate experience: The absence of human interaction in the early stages of the hiring process may frustrate some applicants and negatively impact the company’s employer brand.  
+	Impersonal candidate experience : The absence of human interaction in the early stages of the hiring process may frustrate some applicants and negatively impact the company’s employer brand.  
 
-Questionable reliability of psychometric evaluations: AI-driven assessments, such as emotional analysis or risk tolerance measurements, are not always accurate and may not provide a true reflection of a candidate’s competencies.  
+	Questionable reliability of psychometric evaluations : AI-driven assessments, such as emotional analysis or risk tolerance measurements, are not always accurate and may not provide a true reflection of a candidate’s 	competencies.  
 
-Conclusion:
+Conclusion :
 
-While AI represents a significant asset in optimizing recruitment efficiency, it should not entirely replace human involvement. A hybrid approach, combining AI-driven automation with thorough human evaluation, appears to be the most effective strategy for ensuring a fair, efficient, and high-quality selection process.  
+	While AI represents a significant asset in optimizing recruitment efficiency, it should not entirely replace human involvement. A hybrid approach, combining AI-driven automation with thorough human evaluation, 	appears to be the most effective strategy for ensuring a fair, efficient, and high-quality selection process.  
 
-Should you require any further details, please do not hesitate to let me know.  
+
+Should you require any further details, please do not hesitate to get in contact with me.  
 
 Yours sincerely,  
-Lilou DUFAU  
-IT Engineer
+Lilou DUFAU
+President
