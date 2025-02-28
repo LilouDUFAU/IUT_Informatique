@@ -1,11 +1,11 @@
-Task 1 
+# Task 1 
 
 L’auteur, journaliste professionnel, a postulé à un emploi et a dû passer des tests en ligne évalués uniquement par une intelligence artificielle. Ces jeux mesuraient sa personnalité et ses compétences, comme la rapidité de réaction ou la tolérance au risque. Aucun humain n’a examiné ses résultats. Il s’interroge sur l’équité d’un tel processus. L’IA est utilisée depuis une décennie dans le recrutement, mais son usage s’est intensifié après la pandémie pour sa rapidité et son efficacité. Des entreprises comme McDonald's, JP Morgan, PWC et Kraft Heinz l’emploient pour présélectionner les candidats avant un entretien humain.
 
 ___
-Task 2
+# Task 2
 
-Subject: Evaluation of the Effectiveness of AI Recruitment Tools
+**Subject: Evaluation of the Effectiveness of AI Recruitment Tools**
 
 Dear Sir,  
 
