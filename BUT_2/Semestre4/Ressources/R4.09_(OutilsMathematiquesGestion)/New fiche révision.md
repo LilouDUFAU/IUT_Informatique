@@ -30,21 +30,35 @@
 
 **Fiche de Révision : Formules et Calculs**
 
+**(1 + t) est à calculer en premier**
+
 ## 1. Calculs de base
 
-- **Intérêts Simples** : VA = C (1 + n * t)
+Pour les intérêts penser à mettre les % en décimal.
+- **Intérêts Simples** : VA = (C * t) * n
 - **Intérêts Composés** : VA = C (1 + t)^n
 - **Conversion d’un taux annuel en taux mensuel** :
     - Taux proportionnel : t_mensuel = t_annuel / 12
     - Taux équivalent : t_mensuel = (1 + t_annuel)^(1/12) - 1
 
 ## 2. Placement et Emprunt
-
+### Placement de départ seulement
 - **Valeur acquise** : VA = C (1 + t)^n
 - **Valeur actuelle** : C = VA / (1 + t)^n
 - **Durée de placement** : n = log(VA / C) / log(1 + t)
+- **Taux de placement** : ((VA / C) ^ 1 / n) - 1
+
 - **Annuité d’un emprunt** : A = C * t / [1 - (1 + t)^-n]
 - **Capital restant dû** : CRD = A * [(1 + t)^n - (1 + t)^p] / t
+
+
+### Placement régulier
+- **Valeur acquise des sommes versées** : VA = sommeVerséeTousLesMois * ((1 + t) ^ n - 1) / t
+- **Somme versée tous les mois** : a = VA(t / ((1 + t) ^ n -1)) 
+- **Durée de placement** : n = [log((VA * t) / a) + 1)] / [log(1 + t)
+- **Taux de placement** : Voir Ex5 TD1 Q11
+
+
 
 ## 3. Rentabilité des investissements
 
