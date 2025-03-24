@@ -1,0 +1,54 @@
+{
+  "CD": [
+    {
+      "id": "1",
+      "title": "The Dark Side of the Moon",
+      "author": "Pink Floyd",
+      "price": 10,
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png",
+      "dateDeSortie": "1973-03-01",
+      "quantite": 1,
+      "onSale": true
+    },
+    {
+      "id": "2",
+      "title": "Pulse",
+      "author": "Pink Floyd",
+      "price": 15,
+      "thumbnail": "https://pinkfloydhyperbase.dk/illu/covers/pulse.jpg",
+      "dateDeSortie": "1995-06-29",
+      "quantite": 2,
+      "onSale": true
+    },
+    {
+      "id": "3",
+      "title": "Pulse1",
+      "author": "Pink Flood",
+      "price": 150,
+      "thumbnail": "https://pinkfloydhyperbase.dk/illu/covers/pulse.jpg",
+      "dateDeSortie": "1995-06-29",
+      "quantite": 0,
+      "onSale": true
+    },
+    {
+      "id": "311",
+      "title": "Open de Surf dAnglet 2025",
+      "author": "Lilou DUFAU",
+      "price": 4545,
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png",
+      "dateDeSortie": "1973-03-01",
+      "quantite": 311,
+      "onSale": false
+    },
+    {
+      "id": "3111",
+      "title": "Trail de la Rhune 2025",
+      "author": "Lilou DUFAU",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png",
+      "dateDeSortie": "2025-03-21",
+      "quantite": 311,
+      "price": 11,
+      "onSale": false
+    }
+  ]
+}

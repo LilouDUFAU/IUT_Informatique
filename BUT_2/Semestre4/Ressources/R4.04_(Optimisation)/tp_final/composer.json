@@ -1,0 +1,15 @@
+{
+    "name": "dufau/tp_final",
+    "autoload": {
+        "psr-4": {
+            "Dufau\\TpFinal\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lilou DUFAU",
+            "email": "dufaulilou16@gmail.com"
+        }
+    ],
+    "require": {}
+}
