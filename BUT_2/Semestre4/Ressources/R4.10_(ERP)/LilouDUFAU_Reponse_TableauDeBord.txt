@@ -1,0 +1,50 @@
+2.3.1 Analyse des Vendeurs
+Qui a le plus de devis ? (Nombre total de devis générés par chaque vendeur)
+Toto Dupont a le plus de devis : 238
+John Doe : 220
+Benjamin Lee Rodriguez : 188
+Sophia 
+Emily Smith Johnson : 17
+
+Qui a le plus de bonnes commandes ? (Nombre total de commandes validées)
+
+Qui a le taux de transformation le plus élevé ? (Ratio entre le nombre de commandes validées
+et le nombre de devis émis)
+
+Qui est le plus performant en négociation ? (Vendeurs dont le prix de ligne de commande est
+supérieur au prix du produit)
+
+Qui accorde le plus de remises aux clients ? (Vendeurs dont le prix de ligne de commande est
+inférieur au prix du produit)
+
+Donnez une vue du montant total de devis par vendeur et par mois.
+
+
+-------------------------------------------------------------------------------------------------------------------
+2.3.2 Analyse des Clients
+Qui a dépensé le plus d’argent ? (Total des montants dépensés par client)
+
+Qui a acheté le plus souvent ? (Nombre total de commandes par client)
+
+Qui demande le plus de devis ? (Nombre total de devis demandés par client)
+
+Qui a passé le plus de bonnes commandes ? (Nombre total de commandes validées par client)
+
+Qui a le taux de transformation le plus élevé ? (Ratio entre les commandes validées et les
+devis demandés)
+
+Est-ce que le montant des devis de chaque client ont une évolution selon temps (sommet et
+bas) ?
+
+
+-------------------------------------------------------------------------------------------------------------------
+2.3.3 Analyse des Produits
+Quel est le produit le plus demandé ? (Produit avec le plus grand nombre de commandes)
+
+Quel est le produit le moins demandé ? (Produit avec le plus petit nombre de commandes)
+
+Quel est le produit le plus et le moins demandé par pays ?
+
+Quelle est la catégorie de produits la plus et la moins demandée ?
+
+Comment les différentes catégories de produits se comportent-elles dans les différents pays ?

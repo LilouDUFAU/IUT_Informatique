@@ -1,0 +1,6 @@
+<div class="lst-jv">
+  <h2>Liste des jeux</h2>
+  <ng-container *ngFor="let unJv of lstJv">
+    <app-jv *ngIf="unJv.quantite > 0" [JV]="unJv"></app-jv>
+  </ng-container>
+</div>

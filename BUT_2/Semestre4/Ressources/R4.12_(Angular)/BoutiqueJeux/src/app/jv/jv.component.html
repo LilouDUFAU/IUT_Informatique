@@ -1,0 +1,14 @@
+<div class="grid">
+  <div class="card">
+    <h2 class="game-title">{{theJv.titre | uppercase}}</h2>
+    <p class="game-info">Sortie le : {{theJv.dateDeSortie}}</p>
+    <p class="game-info">Genre : {{theJv.genre}}</p>
+    <p class="game-info">Plateforme : {{theJv.plateforme}}</p>
+    <p class="game-info">Développeur : {{theJv.developpeur}}</p>
+    <p class="game-info">Quantité : {{theJv.quantite}}</p>
+    <p>
+      <button name="add" id="add" class="btn-add" (click)="onAddJV()">Ajouter une unité</button>
+      <button name="del" id="del" class="btn-del" (click)="onRemoveJV()">Retirer une unité</button>
+    </p>
+  </div>
+</div>

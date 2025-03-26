@@ -1,0 +1,13 @@
+<div class="lst-res">
+  <div class="card-body">
+    <p><strong>Nom :</strong> {{ RES.nomClient }}</p>
+    <p><strong>Email :</strong> {{ RES.emailClient }}</p>
+    <p><strong>Date de reservation :</strong> {{ RES.dateReservation| date:'dd/MM/yyyy' }}</p>
+    <p><strong>Jeu :</strong> {{ RES.titreJeu }}</p>
+    <p><strong>Plateforme du jeu :</strong> {{ RES.plateformeJeu }}</p>
+  </div>
+  <div class="card-footer">
+    <!-- <button class="btn btn-primary" (click)="modifierReservation()">Modifier</button> -->
+    <!-- <button class="btn btn-danger" (click)="annulerReservation()">Annuler</button> -->
+  </div>
+</div>

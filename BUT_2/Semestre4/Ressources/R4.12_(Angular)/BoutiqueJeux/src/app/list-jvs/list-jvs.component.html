@@ -1,0 +1,8 @@
+<div class="list-jvs">
+  <h2 class="section-title">Liste des jeux vidéo</h2>
+  <div class="grid">
+    <ng-container *ngFor="let unJv of listJv">
+      <app-jv *ngIf="unJv.quantite > 0" [jv]="unJv" class="card"></app-jv>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,147 @@
+{
+    "jeux_video": [
+      {
+        "id": 1,
+        "titre": "The Legend of Zelda: Breath of the Wild",
+        "plateforme": "Nintendo Switch",
+        "genre": "Action-Aventure",
+        "developpeur": "Nintendo",
+        "dateDeSortie": "2017-03-03",
+        "quantite": 10
+      },
+      {
+        "id": 2,
+        "titre": "God of War",
+        "plateforme": "PlayStation 4",
+        "genre": "Action",
+        "developpeur": "Santa Monica Studio",
+        "dateDeSortie": "2018-04-20",
+        "quantite": 5
+      },
+      {
+        "id": 3,
+        "titre": "Elden Ring",
+        "plateforme": "PlayStation 5",
+        "genre": "RPG",
+        "developpeur": "FromSoftware",
+        "dateDeSortie": "2022-02-25",
+        "quantite": 8
+      },
+      {
+        "id": 4,
+        "titre": "Horizon Forbidden West",
+        "plateforme": "PlayStation 5",
+        "genre": "Action-RPG",
+        "developpeur": "Guerrilla Games",
+        "dateDeSortie": "2022-02-18",
+        "quantite": 6
+      },
+      {
+        "id": 5,
+        "titre": "Red Dead Redemption 2",
+        "plateforme": "Xbox One",
+        "genre": "Aventure",
+        "developpeur": "Rockstar Games",
+        "dateDeSortie": "2018-10-26",
+        "quantite": 7
+      },
+      {
+        "id": 6,
+        "titre": "Cyberpunk 2077",
+        "plateforme": "PC",
+        "genre": "RPG",
+        "developpeur": "CD Projekt Red",
+        "dateDeSortie": "2020-12-10",
+        "quantite": 9
+      },
+      {
+        "id": 7,
+        "titre": "Final Fantasy VII Remake",
+        "plateforme": "PlayStation 4",
+        "genre": "RPG",
+        "developpeur": "Square Enix",
+        "dateDeSortie": "2020-04-10",
+        "quantite": 4
+      },
+      {
+        "id": 8,
+        "titre": "The Witcher 3: Wild Hunt",
+        "plateforme": "PC",
+        "genre": "RPG",
+        "developpeur": "CD Projekt Red",
+        "dateDeSortie": "2015-05-19",
+        "quantite": 12
+      },
+      {
+        "id": 9,
+        "titre": "Super Mario Odyssey",
+        "plateforme": "Nintendo Switch",
+        "genre": "Plateforme",
+        "developpeur": "Nintendo",
+        "dateDeSortie": "2017-10-27",
+        "quantite": 11
+      },
+      {
+        "id": 10,
+        "titre": "Halo Infinite",
+        "plateforme": "Xbox Series X",
+        "genre": "FPS",
+        "developpeur": "343 Industries",
+        "dateDeSortie": "2021-12-08",
+        "quantite": 5
+      }
+    ],
+    "reservations": [
+      {
+        "id": 1,
+        "nomClient": "Jean Dupont",
+        "emailClient": "jean.dupont@example.com",
+        "telephoneClient": "0123456789",
+        "titreJeu": "The Legend of Zelda: Breath of the Wild",
+        "plateformeJeu": "Nintendo Switch",
+        "dateReservation": "2024-03-25",
+        "statutReservation": "Confirmée"
+      },
+      {
+        "id": 2,
+        "nomClient": "Alice Martin",
+        "emailClient": "alice.martin@example.com",
+        "telephoneClient": "0987654321",
+        "titreJeu": "God of War",
+        "plateformeJeu": "PlayStation 4",
+        "dateReservation": "2024-03-26",
+        "statutReservation": "En attente"
+      },
+      {
+        "id": 3,
+        "nomClient": "Lucas Bernard",
+        "emailClient": "lucas.bernard@example.com",
+        "telephoneClient": "0671234567",
+        "titreJeu": "Elden Ring",
+        "plateformeJeu": "PlayStation 5",
+        "dateReservation": "2024-03-20",
+        "statutReservation": "Confirmée"
+      },
+      {
+        "id": 4,
+        "nomClient": "Sophie Laurent",
+        "emailClient": "sophie.laurent@example.com",
+        "telephoneClient": "0654321098",
+        "titreJeu": "Cyberpunk 2077",
+        "plateformeJeu": "PC",
+        "dateReservation": "2024-03-22",
+        "statutReservation": "Annulée"
+      },
+      {
+        "id": 5,
+        "nomClient": "Marc Dubois",
+        "emailClient": "marc.dubois@example.com",
+        "telephoneClient": "0612345678",
+        "titreJeu": "Red Dead Redemption 2",
+        "plateformeJeu": "Xbox One",
+        "dateReservation": "2024-03-27",
+        "statutReservation": "En attente"
+      }
+    ]
+  }
+  
