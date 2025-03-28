@@ -1,0 +1,28 @@
+<h1>Ajouter une Reservation</h1>
+<div class="monForm">
+  <section class="subForm saisieForm">
+    <form [formGroup]="formulaire"></form>
+  </section>
+  <div class="form-group">
+    <label for="nom">Nom du Client :</label>
+    <input type="text" class="form-control" id="nom" formControlName="nom" required>
+    <br>
+    <label for="email">Email du Client :</label>
+    <input type="text" class="form-control" id="email" formControlName="email" required>
+    <br>
+    <label for="tel">Téléphone du client :</label>
+    <input type="text" class="form-control" id="tel" formControlName="tel" required>
+    <br>
+    <label for="titreJeu">Titre du jeu :</label>
+    <input type="text" class="form-control" id="titreJeu" formControlName="titreJeu" required>
+    <br>
+    <label for="PlateformeJeu">Plateforme du jeu :</label>
+    <input type="text" class="form-control" id="PlateformeJeu" formControlName="PlateformeJeu" required>
+    <br>
+    <label for="dateReservation">Date de la réservation :</label>
+    <input type="date" class="form-control" id="dateReservation" formControlName="dateReservation" required>
+    <br>
+    <label for="statutReservation">Statut de la réservation :</label>
+    <input type="text" class="form-control" id="statutReservation" formControlName="statutReservation" required>
+  </div>
+</div>

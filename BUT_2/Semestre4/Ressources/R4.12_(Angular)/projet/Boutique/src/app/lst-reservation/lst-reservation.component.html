@@ -1,5 +1,5 @@
 <div class="lst-res" *ngIf="lstRes && lstRes.length > 0">
-  <h2>Liste des réservations</h2>
+  <h1>Liste des réservations</h1>
   <ng-container *ngFor="let uneRes of lstRes">
     <app-reservation [RES]="uneRes"></app-reservation>
   </ng-container>

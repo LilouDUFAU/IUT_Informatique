@@ -1,10 +1,15 @@
-<div class="cd-card" [ngClass]="{'jvadded' : JV.quantite > 0}">
+<div class="cd-card" [ngClass]="{'jvadded' : theJv.quantite > 0}">
   <div class="cd-card-header">
-    <h3>{{JV.titre}}</h3>
+    <h3>{{theJv.titre}}</h3>
   </div>
   <div class="cd-card-body">
-    <p>Genre : {{JV.genre}}</p>
-    <p>Sortie le : {{JV.dateDeSortie | date: 'dd/MM/yyyy'}}</p>
-    <p>Quantite : {{JV.quantite}}</p>
+    <p>Genre : {{theJv.genre}}</p>
+    <p>Sortie le : {{theJv.dateDeSortie | date: 'dd/MM/yyyy'}}</p>
+    <p>Quantite : {{theJv.quantite}}</p>
   </div>
+  <div class="card-footer">
+    <button class="btn btn-primary" *ngIf="theJv.quantite > 0" (click)="onAdd()">Commander</button>
+    <button class="btn btn-danger" (click)="onDelete()">Supprimer</button>
+  </div>
+  <p>Voir les réservations de ce jeu <button (click)="resJv(theJv.titre, theJv.plateforme)">Voir</button></p>
 </div>

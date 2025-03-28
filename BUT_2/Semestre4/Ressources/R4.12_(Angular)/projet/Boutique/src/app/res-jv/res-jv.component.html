@@ -1,0 +1,8 @@
+<div class="lst-res" *ngIf="resJv && resJv.length > 0">
+  <h1>Liste des réservations associées au jeu</h1>
+  <ng-container *ngFor="let uneRes of resJv">
+    <app-reservation [RES]="uneRes"></app-reservation>
+  </ng-container>
+</div>
+
+<h2 *ngIf="resJv && resJv.length === 0">Aucune réservation associée à ce jeu</h2>

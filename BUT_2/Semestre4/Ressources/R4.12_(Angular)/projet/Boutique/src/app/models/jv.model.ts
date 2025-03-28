@@ -6,7 +6,7 @@ export class JV {
     developpeur!: string;
     dateDeSortie!: Date;
     quantite!: number;
-  
+
     constructor(
       id: number,
       titre: string,
@@ -25,4 +25,3 @@ export class JV {
       this.quantite = quantite;
     }
   }
-  
