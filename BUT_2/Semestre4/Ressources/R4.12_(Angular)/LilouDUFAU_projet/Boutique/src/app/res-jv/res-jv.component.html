@@ -1,0 +1,14 @@
+<div class="lst-res container mt-4" *ngIf="resJv && resJv.length > 0">
+  <h1 class="text-primary mb-4">Liste des réservations associées au jeu</h1>
+  <div class="row">
+    <ng-container *ngFor="let uneRes of resJv">
+      <div class="col-md-4 mb-3">
+        <app-reservation [RES]="uneRes" class="card p-3"></app-reservation>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<h2 class="text-danger mt-4" *ngIf="resJv && resJv.length === 0">
+  Aucune réservation associée à ce jeu
+</h2>

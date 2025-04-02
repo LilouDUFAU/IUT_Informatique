@@ -1,0 +1,18 @@
+<div class="card mb-3" [ngClass]="{'border-success': theJv.quantite > 0}">
+  <div class="card-header bg-primary text-white">
+    <h3>{{theJv.titre}}</h3>
+  </div>
+  <div class="card-body">
+    <p><b>Plateforme :</b> {{ theJv.plateforme }} </p>
+    <p><b>Développeur :</b> {{ theJv.developpeur }}</p>
+    <p><b>Genre :</b> {{theJv.genre}}</p>
+    <p><b>Sortie le :</b> {{theJv.dateDeSortie | date: 'dd/MM/yyyy'}}</p>
+    <p><b>Quantité :</b> {{theJv.quantite}}</p>
+  </div>
+  <div class="card-footer d-flex justify-content-between align-items-center">
+    <button class="btn btn-primary" *ngIf="theJv.quantite > 0" (click)="onAdd(theJv.id)">Commander</button>
+    <p class="mb-0 d-flex align-items-center">Voir les réservations de ce jeu
+      <button class="btn btn-link p-0 ms-2" (click)="resJv(theJv.titre, theJv.plateforme)">Voir</button>
+    </p>
+  </div>
+</div>

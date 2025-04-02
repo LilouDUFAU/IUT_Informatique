@@ -1,0 +1,16 @@
+<div class="lst-res container mt-4" *ngIf="lstRes && lstRes.length > 0">
+  <h1 class="text-center mb-4">Liste des réservations</h1>
+  <div class="mb-3">
+    <app-search (searchEvent)="onSearch($event)"></app-search>
+  </div>
+  <div class="mb-3">
+    <app-filter [titreJeu]="titreJeu" (filterEvent)="applyFilters($event)"></app-filter>
+  </div>
+  <div class="row">
+    <ng-container *ngFor="let uneRes of filteredRes">
+      <div class="col-md-4 mb-3">
+        <app-reservation [RES]="uneRes"></app-reservation>
+      </div>
+    </ng-container>
+  </div>
+</div>

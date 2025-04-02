@@ -1,0 +1,12 @@
+<div class="card lst-res">
+  <div class="card-body">
+    <p><strong>Nom :</strong> {{ theRes.nomClient }}</p>
+    <p><strong>Email :</strong> {{ theRes.emailClient }}</p>
+    <p><strong>Date de réservation :</strong> {{ theRes.dateReservation | date:'dd/MM/yyyy' }}</p>
+    <p><strong>Jeu :</strong> {{ theRes.titreJeu }}</p>
+    <p><strong>Plateforme du jeu :</strong> {{ theRes.plateformeJeu }}</p>
+  </div>
+  <div class="card-footer text-end">
+    <button class="btn btn-danger" (click)="onDelete(theRes.id)">Annuler</button>
+  </div>
+</div>

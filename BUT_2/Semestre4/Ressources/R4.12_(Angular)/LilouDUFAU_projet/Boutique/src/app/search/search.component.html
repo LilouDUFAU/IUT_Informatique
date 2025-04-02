@@ -1,0 +1,9 @@
+<div class="search-container d-flex justify-content-center mt-3">
+  <input
+    type="text"
+    class="form-control w-50"
+    placeholder="Rechercher..."
+    [(ngModel)]="searchTerm"
+    (input)="onSearchChange()"
+  />
+</div>

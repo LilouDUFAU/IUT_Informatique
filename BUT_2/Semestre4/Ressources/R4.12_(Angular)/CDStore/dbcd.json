@@ -49,6 +49,16 @@
       "quantite": 311,
       "price": 11,
       "onSale": false
+    },
+    {
+      "id": 3112,
+      "title": "uyuygugfguf",
+      "author": "gtfutfu",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png",
+      "dateDeSortie": "2025-03-31",
+      "quantite": 5,
+      "price": 5,
+      "onSale": false
     }
   ]
 }

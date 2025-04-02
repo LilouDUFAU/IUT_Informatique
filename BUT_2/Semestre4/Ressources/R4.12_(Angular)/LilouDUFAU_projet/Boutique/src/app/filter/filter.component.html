@@ -1,0 +1,25 @@
+<div class="filter-container container mt-3">
+  <div class="row mb-3">
+    <div class="col-md-4">
+      <label for="category" class="form-label">Catégorie :</label>
+      <select id="category" class="form-select" [(ngModel)]="selectedCategory" (change)="onFilterChange()">
+        <option value="">Toutes</option>
+        <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="plateforme" class="form-label">Plateforme :</label>
+      <select id="plateforme" class="form-select" [(ngModel)]="selectedPlateforme" (change)="onFilterChange()">
+        <option value="">Toutes</option>
+        <option *ngFor="let plateforme of plateformes" [value]="plateforme">{{ plateforme }}</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="type" class="form-label">Titre jeu :</label>
+      <select id="type" class="form-select" [(ngModel)]="selectedTitreJeu" (change)="onFilterChange()">
+        <option value="">Tous</option>
+        <option *ngFor="let type of titreJeu" [value]="type">{{ type }}</option>
+      </select>
+    </div>
+  </div>
+</div>
